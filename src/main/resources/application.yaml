@@ -1,0 +1,23 @@
+#datasource
+spring:
+    datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/qbms?useUnicode=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: wangruyu
+
+    messages:
+      basename: i18n/messages
+      encoding: UTF-8
+#mybatis
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+
+#logging
+logging:
+  level:
+    cn.qtech.mapper: DEBUG
+
+
+
+
